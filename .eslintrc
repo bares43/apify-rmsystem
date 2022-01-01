@@ -1,0 +1,9 @@
+{
+    "extends": "@apify",
+    "rules": {
+      "linebreak-style": 0,
+      "indent": ["error", 2],
+      "newline-per-chained-call": 0,
+      "no-continue": 0
+  }
+}

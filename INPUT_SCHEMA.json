@@ -1,0 +1,29 @@
+{
+  "title": "RMSystem stocks scraper",
+  "description": "This RMSystem stocks scraper provides an API for retrieving data about stocks which are tradet on Czech RMSystem.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrls": {
+      "title": "Start URLs",
+      "type": "array",
+      "description": "URLs to start with.",
+      "editor": "requestListSources",
+      "prefill": [
+        { "url": "https://www.rmsystem.cz/kurzy-online/akcie/easyclick" }
+      ]
+    },
+    "resultType": {
+      "title": "Result type",
+      "type": "string",
+      "description": "Select result type",
+      "editor": "select",
+      "default": "array",
+      "enum": ["array", "single"],
+      "enumTitles": ["Array", "Single"]
+    }
+  },
+  "required": [
+    "startUrls"
+  ]
+}
